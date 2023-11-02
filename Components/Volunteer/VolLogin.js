@@ -1,5 +1,6 @@
 import {TouchableOpacity, StyleSheet, Text, TextInput, View, ScrollView } from 'react-native';
 import { OtpInput } from 'react-native-otp-entry';
+import OtpLogin from '../pages/OtpLogin';
 
 export const VolLogin=(props)=>{
     return(
@@ -56,7 +57,8 @@ export const OtpPageVol=(props)=>{
             <Text>You must have received a 4-digit OTP on your number, please enter it here</Text>
             <Text>If you think, your phone number is incorrect,Go back and change it</Text>
             
-            <OtpInput 
+            <OtpLogin/>
+            {/* <OtpInput 
                 numberOfDigits={4}
                 focusColor="green"
                 onTextChange={text => console.log(text)}
@@ -66,7 +68,7 @@ export const OtpPageVol=(props)=>{
                 pinCodeTextStyle={styles.pinCodeText}
                 focusStickStyle={styles.focusStick}
                 focusStickBlinkingDuration={500}
-            />
+            /> */}
             
             <TouchableOpacity
                 >
