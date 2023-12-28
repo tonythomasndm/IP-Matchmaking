@@ -11,6 +11,7 @@ import { OtpPageSeek } from './Components/Seeker/SeekLogin';
 import { VolSignUp } from './Components/Volunteer/VolLogin';
 import { VolCongratsPage } from './Components/Volunteer/VolLogin';
 import { SeekSignUp } from './Components/Seeker/SeekLogin';
+import{comp} from './comp';
 
 const Stack=createNativeStackNavigator();
 export default function App() {
@@ -63,7 +64,9 @@ function Started(props){
       onPress={()=>props.navigation.navigate("Home")}>
         <Text
         style={styles.container_element}
-        >Get Started</Text>
+        >Get Started
+        </Text>
+        <comp/>
       </TouchableOpacity>
 
       {/* <StatusBar style="auto" /> */}
